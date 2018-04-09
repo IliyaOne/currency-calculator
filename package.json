@@ -1,0 +1,36 @@
+{
+  "name": "pl_redux",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run webpack\" ",
+    "server": "node ./server/app.js",
+    "build": "webpack -p",
+    "webpack": "webpack -w"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "morgan": "^1.7.0",
+    "react-redux": "^5.0.7"
+  },
+  "devDependencies": {
+    "axios": "^0.16.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.23.0",
+    "concurrently": "^2.0.0",
+    "lodash.debounce": "^4.0.3",
+    "prettier": "1.11.1",
+    "prop-types": "15.5.8",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "redux": "^3.7.2",
+    "webpack": "2.2.1"
+  }
+}
